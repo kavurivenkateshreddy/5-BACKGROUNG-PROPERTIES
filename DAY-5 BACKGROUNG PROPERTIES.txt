@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKGROUND PROPERTIES</title>
+    <style>
+        h1{background-color:cyan;color:red;text-align:center;border-style: dashed;}
+        h2 {color:rgb(237, 92, 52);}
+        h3 {color:rgb(7, 248, 39);text-decoration:underline;}
+        #output {text-align:center;font-size:25px;color:blue;text-decoration:underline;}
+
+        #body {background-color:yellow;}
+
+        #image {background-image: url(https://freeiconshop.com/wp-content/uploads/edd/css-flat.png);}
+
+        #repeat {background-image: url(https://freeiconshop.com/wp-content/uploads/edd/css-flat.png);background-repeat: no-repeat;}
+
+        #attachement {background-image: url(https://freeiconshop.com/wp-content/uploads/edd/css-flat.png);background-repeat:no-repeat;background-attachment: fixed;}
+        
+        #position {background-image: url(https://freeiconshop.com/wp-content/uploads/edd/css-flat.png);background-repeat:no-repeat;background-position:center;}
+
+        #shorthand {background: #ffffff url(https://freeiconshop.com/wp-content/uploads/edd/css-flat.png) no-repeat fixed right bottom;}
+
+        
+
+   </style>
+</head>
+<body>
+    <p><h1><u>BACKGROUND PROPERTIES</u></h1></p>
+    <p>--->The CSS background properties are used to add background effects for elements.</p>
+    <p>---> Here we wil learn about the following css 'backgroung proprties' They are : </p>
+    <p><h2><ol type="1">
+        <li>background-color</li>
+        <li>background-image</li>
+        <li>background-repeat</li>
+        <li>background-attachement</li>
+        <li>background-position</li>
+        <li>background-(shorthand property)</li><br>
+    </ol></h2></p>
+    <p><ol type="1">
+        <li><h2><u>background-color</u></h2></li>
+        <p>---> The background-color property specifies the background color of an element.</p>
+        <h3>EXAMPLE :</h3>
+        &lt html &gt<br>
+        &lt head &gt<br>
+        &lt style &gt<br><br>
+        #body {background-color:yellow}<br><br>
+        &lt /style &gt<br>
+        &lt /head &gt<br>
+        &lt body &gt<br><br>
+        &lt p id="body" &gt This line has a yellow background color! &lt /p &gt<br><br>
+        &lt /body &gt<br>
+        &lt /head &gt<br>
+        &lt /html &gt<br>
+        <p id="output">OUTPUT</p>
+        <p id="body">This line has a yellow background color!</p>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        <li><h2><u>background-image</u></h2></li>
+        <p>---> The background-image property specifies an image to use as the background of an element.</p>
+        <p>---> By default, the image is repeated so it covers the entire element of the screen.</p>
+        <h3>EXAMPLE :</h3>
+        &lt html &gt<br>
+        &lt head &gt<br>
+        &lt style &gt<br><br>
+        #image {background-image: url(http://surl.li/cjcvw);}<br><br>
+        &lt /style &gt<br>
+        &lt /head &gt<br>
+        &lt body &gt<br><br>
+        &lt p id="image"  &gt This page has an image as the background! &lt /p  &gt<br><br>
+        &lt /body &gt<br>
+        &lt /head &gt<br>
+        &lt /html &gt<br>
+        <p id="output">OUTPUT</p>
+        <p id="image"> ---> The background-image property sets one or more background images for an element.<br><br>
+
+            By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.<br><br>
+            
+            Tip: The background of an element is the total size of the element, including padding and border (but not the margin).<br><br>
+            
+            Tip: Always set a background-color to be used if the image is unavailable.<br><br></p>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        <li><h2><u>background-repeat</u></h2></li>
+        <p>---> By default, the background-image property repeats an image both horizontally and vertically.</p>
+        <p>Tip: To repeat an image horizontally, set background-repeat: repeat-x;</p>
+        <p>---> Tip: To repeat an image vertically, set background-repeat: repeat-y;</p>
+        <p>---> Showing the background image only once is also specified by the 'background-repeat:no-repeat' property:</p>
+        <p>---> Here it will get only one time.</p>
+        <h3>EXAMPLE :</h3>
+        &lt html &gt<br>
+        &lt head &gt<br>
+        &lt style &gt<br><br>
+        #attachement {background-image: url("img_tree.png");background-repeat:no-repeat;background-attachment: fixed;} <br><br>
+        &lt /style &gt<br>
+        &lt /head &gt<br>
+        &lt body &gt<br><br>
+        &lt id="repeat" &gt This page has an image as the background!&lt /p &gt<br><br>
+        &lt /body &gt<br>
+        &lt /head &gt<br>
+        &lt /html &gt<br>
+        <p id="output">OUTPUT</p>
+        <p id="repeat">The background-repeat property sets if/how a background image will be repeated.<br><br>
+
+            By default, a background-image is repeated both vertically and horizontally.<br><br>
+            
+            <br><br>Tip: The background image is placed according to the background-position property.
+
+            <br><br>If no background-position is specified, the image is always placed at the element's top left corner.<br><br>
+            <br><br>no-repeat	The background-image is not repeated. The image will only be shown once</p>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        <li><h2><u>background-attachement</u></h2></li>
+        <p>---> The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):</p>
+        <p>---> If we given background-attachment:fixed; then the image is fixed at a position</p>
+        <h3>EXAMPLE :</h3>
+        &lt html &gt<br>
+        &lt head &gt<br>
+        &lt style &gt<br><br>
+        #attachement {background-image: url(http://surl.li/cjdak);background-attachment: fixed;}<br><br>
+        &lt /style &gt<br>
+        &lt /head &gt<br>
+        &lt body &gt<br><br>
+        &lt p id="attachement" &gt The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page).&lt /p &gt<br><br>
+        &lt /body &gt<br>
+        &lt /head &gt<br>
+        &lt /html &gt<br>
+        <p id="output">OUTPUT</p>
+        <p id="attachement">The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page).<br>
+            The background-image is fixed. Try to scroll down the page.<br>The background-image is fixed. Try to scroll down the page.<br>The background-image is fixed. Try to scroll down the page.<br>The background-image is fixed. Try to scroll down the page.<br>The background-image is fixed. Try to scroll down the page.<br>
+            The background-image is fixed. Try to scroll down the page.<br>The background-image is fixed. Try to scroll down the page.<br>The background-image is fixed. Try to scroll down the page.<br>The background-image is fixed. Try to scroll down the page.<br>
+            The background-image is fixed. Try to scroll down the page.<br>The background-image is fixed. Try to scroll down the page.<br>The background-image is fixed. Try to scroll down the page.<br>The background-image is fixed. Try to scroll down the page.<br>
+            The background-image is fixed. Try to scroll down the page.<br>The background-image is fixed. Try to scroll down the page.<br>The background-image is fixed. Try to scroll down the page.<br>The background-image is fixed. Try to scroll down the page.<br>
+        </p>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        <li><h2><u>background-position</u></h2></li>
+        <p>---> The background-position property sets the starting position of a background image.</p>
+        <p>---> Tip: By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.</p>
+        <p>---> So Here it is the background-position:center; then the image is set in the center position.</p>
+        <h3>EXAMPLE :</h3>
+        &lt html &gt<br>
+        &lt head &gt<br>
+        &lt style &gt<br><br>
+        #position {background-image: url(http://surl.li/cjcvw);background-repeat:no-repeat;background-position:center;}<br><br>
+        &lt /style &gt<br>
+        &lt /head &gt<br>
+        &lt body &gt<br><br>
+        &lt p id="position" &gt The background-position property specifies whether the background image position should be placed at a position with the rest of the page).&lt /p &gt<br><br>
+        &lt /body &gt<br>
+        &lt /head &gt<br>
+        &lt /html &gt<br>
+        <p id="output">OUTPUT</p>
+        <p>---> Here, the background image will be positioned in the center of the element (in this case, the body element).</p>
+        <p id="position">--->The background-position property sets the starting position of a background image.<br>
+            The background-position:center so the image is at center position.<br>The background-position:center so the image is at center position.<br>The background-position:center so the image is at center position.<br>The background-position:center so the image is at center position.<br>
+            The background-position:center so the image is at center position.<br>The background-position:center so the image is at center position.<br>The background-position:center so the image is at center position.<br>The background-position:center so the image is at center position.<br>
+            The background-position:center so the image is at center position.<br>The background-position:center so the image is at center position.<br>The background-position:center so the image is at center position.<br>The background-position:center so the image is at center position.<br>
+            The background-position:center so the image is at center position.<br>The background-position:center so the image is at center position.<br>The background-position:center so the image is at center position.<br>The background-position:center so the image is at center position.<br>
+        </p>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        <li><h2><u>background-shorthand</u></h2></li>
+        <p>---> To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.</p>
+        <p>---> When using the shorthand property the order of the property values is:<br><br>
+
+            background-color<br>
+            background-image<br>
+            background-repeat<br>
+            background-attachment<br>
+            background-position<br><br>
+
+            It does not matter if one of the property values is missing, as long as the other ones are in this order.<br>
+            Note that we do not use the background-attachment property in the examples above, as it does not have a value.</p>
+            <h3>EXAMPLE :</h3>
+        &lt html &gt<br>
+        &lt head &gt<br>
+        &lt style &gt<br><br>
+        #shorthand {background: #ffffff url(https://freeiconshop.com/wp-content/uploads/edd/css-flat.png) no-repeat fixed right bottom;}<br><br>
+        &lt /style &gt<br>
+        &lt /head &gt<br>
+        &lt body &gt<br><br>
+        &lt p id="shorthand" &gtTo shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.&lt /p &gt<br><br>
+        &lt /body &gt<br>
+        &lt /head &gt<br>
+        &lt /html &gt<br>
+        <p id="output">OUTPUT</p>
+        <p id="shorthand">---> To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.<br>
+            When using the shorthand property the order of the property values is:<br><br>
+
+            background-color<br>
+            background-image<br>
+            background-repeat<br>
+            background-attachment<br>
+            background-position<br><br>
+
+            It does not matter if one of the property values is missing, as long as the other ones are in this order.<br>
+            Note that we do not use the background-attachment property in the examples above, as it does not have a value.
+            The body {background: color image repeat attachement position}.<br>The body {background: color image repeat attachement position}.<br>The body {background: color image repeat attachement position}.<br>The body {background: color image repeat attachement position}.<br>
+            The body {background: color image repeat attachement position}.<br>The body {background: color image repeat attachement position}.<br>The body {background: color image repeat attachement position}.<br>The body {background: color image repeat attachement position}.<br>
+            The body {background: color image repeat attachement position}.<br>The body {background: color image repeat attachement position}.<br>The body {background: color image repeat attachement position}.<br>The body {background: color image repeat attachement position}.<br>
+            The body {background: color image repeat attachement position}.<br>The body {background: color image repeat attachement position}.<br>The body {background: color image repeat attachement position}.<br>The body {background: color image repeat attachement position}.<br>
+            
+        </p>
+
+</body>
+</html>
